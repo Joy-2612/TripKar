@@ -14,28 +14,87 @@
 
 
     <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: var(--white);
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 7px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 1000px;
+        height: 500px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+
+
+
 </head>
 <body>
+
+   <div id="loader">
+      <div class="body-load">
+          <div class="face">
+              <div class="circle"></div>
+          </div>
+          <div class="face">
+              <div class="circle"></div>
+          </div>
+      </div>
+  </div>
+
+
+  <div id="main-body">
+
+
     
-    <section class="header">
+   <section class="header">
         
         
-        <a href="home.php" class="logo">TripKar</a>
-        
-        
-        <nav class="navbar">
-            <a href="home.php">home</a>
-            <a href="about.php">about</a>
-            <a href="package.php">package</a>
-            <a href="book.php">book</a>
-        </nav>
-        
-        <div id="menu-btn" class="fas fa-bars"></div>
-        
-    </section>
+      <a href="home.php" class="logo">TripKar</a>
+      
+      
+      <nav class="navbar">
+          <a href="home.php">home</a>
+          <a href="about.php">about</a>
+          <a href="package.php">package</a>
+          <a href="book.php">book</a>
+          <a href="map.php">Map</a>
+      </nav>
+      
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <img src="images/moon.png"  id="dark-icon">
+      
+  </section>
 
 
-    <div class="heading" style="background:url(images/header-bg-1.png) no-repeat">
+    <div class="heading" style="background:url(images/header-bg-1-modified.png) no-repeat">
+         
         <h1>about us</h1>
     </div>
 
@@ -213,6 +272,8 @@
 
     <div class="credit"> created by <span>Joy</span> | all rights reserved! </div>
     </section>
+
+   </div>
 
 
 

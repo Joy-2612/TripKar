@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Home</title>
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      <!-- swiper css link  -->
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+      <!-- font awesome cdn link  -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+      <!-- custom css file link  -->
+      <link rel="stylesheet" href="css/style.css">
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-
-    <link rel="stylesheet" href="css/style.css">
-
-    
-
-    <style>
+      <style>
         html,
         body {
           position: relative;
@@ -52,10 +53,10 @@
         }
       </style>
 
+
+
 </head>
 <body>
-
-
 
 
     <div id="loader">
@@ -74,7 +75,6 @@
 
 
     <div id="main-body">
-
     
     <section class="header">
         
@@ -97,72 +97,20 @@
     </section>
 
 
-    <div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
-        <h1>Book Now</h1>
-    </div>
 
-
-
-    <section class="booking">
-
-        <h1 class="heading-title">Book your trip!</h1>
-
-        <form action="book_form.php" method="post" class="book-form"> 
-
-            <div class="flex">
-                <div class="inputBox">
-                    <span>Name:</span>
-                    <input type="text" placeholder="Enter your name" name="name">
-                </div>
-                <div class="inputBox">
-                    <span>email:</span>
-                    <input type="email" placeholder="Enter your email" name="email">
-                </div>
-                <div class="inputBox">
-                    <span>Phone Number:</span>
-                    <input type="number" placeholder="Enter your Phone Number" name="phone">
-                </div>
-                <div class="inputBox">
-                    <span>Address:</span>
-                    <input type="text" placeholder="Enter your Address" name="address">
-                </div>
-                <div class="inputBox">
-                    <span>Where to :</span>
-                    <input type="text" placeholder="Place you want to visit" name="location">
-                </div>
-                <div class="inputBox">
-                    <span>How many:</span>
-                    <input type="number" placeholder="Number of guests" name="guests">
-                </div>
-                <div class="inputBox">
-                    <span>Arrivals :</span>
-                    <input type="date" name="arrivals">
-                </div>
-                <div class="inputBox">
-                    <span>Leaving :</span>
-                    <input type="date" name="leaving">
-                </div>
-
-            </div>
-
-            <input type="submit" value="submit" class="btn" name="send">
-
-        </form>
-
+    <section class="map">
+        <h3>Spot Your destination here !</h3>
+        <div class="mapimage">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d374241.72324034444!2d77.13948948583366!3d28.625092997287762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1672399232201!5m2!1sen!2sin" width="1500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
     </section>
+   
 
 
 
 
-
-
-
-
-
-
-
-    
-    <section class="footer">
+        <section class="footer">
         <div class ="box-container">
         <div class="box">
             <h3>quick links</h3>
@@ -204,27 +152,16 @@
     <div class="credit"> created by <span>Joy</span> | all rights reserved! </div>
     </section>
 
+
 </div>
 
 
 
+        <!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-    <script src="js/script.js"></script>
-    
-    
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
 
 </body>
 </html>

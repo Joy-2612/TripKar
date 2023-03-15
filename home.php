@@ -9,6 +9,7 @@
 
       <!-- swiper css link  -->
       <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> -->
 
       <!-- font awesome cdn link  -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -16,10 +17,56 @@
       <!-- custom css file link  -->
       <link rel="stylesheet" href="css/style.css">
 
-
+      <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: var(--white);
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 7px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+  
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 1000px;
+          height: 500px;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+        }
+      </style>
 
 </head>
 <body>
+    <div id="loader">
+        <div class="body-load">
+            <div class="face">
+                <div class="circle"></div>
+            </div>
+            <div class="face">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-body">
+
     
     <section class="header">
         
@@ -32,9 +79,12 @@
             <a href="about.php">about</a>
             <a href="package.php">package</a>
             <a href="book.php">book</a>
+            <a href="map.php">Map</a>
         </nav>
         
         <div id="menu-btn" class="fas fa-bars"></div>
+
+        <img src="images/moon.png"  id="dark-icon">
         
     </section>
 
@@ -47,7 +97,7 @@
      
            <div class="swiper-wrapper">
      
-              <div class="swiper-slide slide" style="background:url(images/home-slide-1.jpg) no-repeat">
+              <div class="swiper-slide slide" style="background:url(images/home-slide-1.avif) no-repeat">
                  <div class="content">
                     <span>explore, discover, travel</span>
                     <h3>travel around the world</h3>
@@ -55,7 +105,7 @@
                  </div>
               </div>
      
-              <div class="swiper-slide slide" style="background:url(images/home-slide-2.jpg) no-repeat">
+              <div class="swiper-slide slide" style="background:url(images/home-slide-2.avif) no-repeat">
                  <div class="content">
                     <span>explore, discover, travel</span>
                     <h3>discover the new places</h3>
@@ -63,7 +113,7 @@
                  </div>
               </div>
      
-              <div class="swiper-slide slide" style="background:url(images/home-slide-3.jpg) no-repeat">
+              <div class="swiper-slide slide" style="background:url(images/home-slide-3.avif) no-repeat">
                  <div class="content">
                     <span>explore, discover, travel</span>
                     <h3>make your tour worthwhile</h3>
@@ -72,9 +122,9 @@
               </div>
               
            </div>
-     
+<!--      
             <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-prev"></div> -->
      
         </div>
 
@@ -90,6 +140,7 @@
         <div class="box-container">
 
             <div class="box">
+                
                 <img src="images/icon-1.png" alt="">
                 <h3>Adventure</h3>
             </div>
@@ -128,19 +179,64 @@
 
 
 
+
+
+
+
+    <section class="features">
+        <h1 class="heading-title">Why Choose Us..?</h1>
+        <div class="container">
+            <div class="box">
+              <span></span>
+              <div class="content">
+                <h2>Card one</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="box">
+              <span></span>
+              <div class="content">
+                <h2>Card two</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="box">
+              <span></span>
+              <div class="content">
+                <h2>Card Three</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+
+
+
+
     <section class="home-about">
 
         <div class="image">
-            <img src="images/about-img.jpg" alt="">
+            <img src="images/about-image.jpg.jpg" alt="">
         </div>
 
         <div class="content">
             <h3>About Us</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iusto assumenda corrupti quisquam voluptates aperiam excepturi facere iste alias voluptas! Quidem error amet nisi mollitia distinctio, perferendis sapiente minus culpa!</p>
-            <a href="about.html" class="btn">Read More</a>
+            <a href="about.php" class="btn">Read More</a>
         </div>
 
     </section>
+
+
+    
+
+
+
 
 
     <section class="home-packages">
@@ -172,7 +268,7 @@
                 <div class="content">
                     <h3>Adventure & Tour</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, optio?</p>
-                    <a href="book.html" class="btn">Book Now</a>
+                    <a href="book.php" class="btn">Book Now</a>
                 </div>
             </div>
 
@@ -232,7 +328,7 @@
         <div class ="box-container">
         <div class="box">
             <h3>quick links</h3>
-            <a href="home.html"><i class="fas fa-angle-right"></i> home</a>
+            <a href="home.php"><i class="fas fa-angle-right"></i> home</a>
             <a href="about.php"><i class="fas fa-angle-right"></i> about</a>
             <a href="package.php"><i class="fas fa-angle-right"></i> package</a>
             <a href="book.php"><i class="fas fa-angle-right"></i> book</a>
@@ -269,13 +365,16 @@
 
     <div class="credit"> created by <span>Joy</span> | all rights reserved! </div>
     </section>
+    </div>
 
     
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <!-- swiper js link  -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>

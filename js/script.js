@@ -1,5 +1,34 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
+let icon = document.getElementById("dark-icon");
+icon.onclick = () =>{
+   document.body.classList.toggle("light-theme");
+   if (document.body.classList.contains("light-theme")){
+      icon.src = "images/moon.png";
+   }
+   else{
+      icon.src = "images/sun.png";
+   }
+}
+
+
+// var load=document.getElementById("loader");
+// window.addEventListener("load",function(){
+//    load.style.display="none";
+// })
+
+
+var load=document.getElementById("loader");
+var body=document.getElementById('main-body');
+setTimeout(() => load.style.visibility ="hidden",1500);
+setTimeout(() => body.hidden =true,0000);
+setTimeout(() => body.hidden =false,1500);
+
+// $(window).on('load',function(){
+//    setTimeout(document.getElementById("loader").style.display="none",5000);
+// });
+
+
 
 menu.onclick = () =>{
    menu.classList.toggle('fa-times');
@@ -11,13 +40,33 @@ window.onscroll = () =>{
    navbar.classList.remove('active');
 };
 
+// var swiper = new Swiper(".home-slider", {
+//    loop:true,
+//    navigation: {
+//      nextEl: ".swiper-button-next",
+//      prevEl: ".swiper-button-prev",
+//    },
+// });
+
 var swiper = new Swiper(".home-slider", {
+   effect: "coverflow",
    loop:true,
-   navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
+   grabCursor: true,
+   centeredSlides: true,
+   slidesPerView: "auto",
+   coverflowEffect: {
+     rotate: 50,
+     stretch: 0,
+     depth: 100,
+     modifier: 1,
+     slideShadows: true,
    },
-});
+   pagination: {
+     el: ".swiper-pagination",
+   },
+ });
+
+
 
 var swiper = new Swiper(".reviews-slider", {
    grabCursor:true,
@@ -51,3 +100,4 @@ loadMoreBtn.onclick = () =>{
       loadMoreBtn.style.display = 'none';
    }
 }
+
